@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="tongji" content="width=device-width,initial-scale=1.0" >
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <meta name="description" content="手势控制">
+    <meta name="keywords" content="手势控制byL&Z&X">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <title>手势控制 | 功能选择</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1><a>手势控制</a></h1>
+                <ul>
+                    <li><a href="{{url_for('webcontrol')}}">视频控制</a></li>
+                    <li><a href="{{url_for('webpainter')}}">屏幕画画</a></li>
+                    <li><a href="{{url_for('webRead')}}">阅读文件</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="home-info" class="bg-color">
+        <div class="img-control"></div>
+        <div class="info-content">
+            <span class="text-primary">视频控制</span>
+            <p>通过手势控制腾讯视频播放器。</p>
+            <span class="text-primary">功能：</span>
+            <p>只有食指竖起：移动鼠标</p>
+            <p>食指放下：左击</p>
+            <p>食指和中指竖起：右击</p>
+            <p>五指张开：全屏播放</p>
+            <p>拇指放下，四指张开：取消全屏</p>
+            <p>伸大拇指：后退</p>
+            <p>伸小拇指：前进</p>
+            <p>比六：下一集</p>
+            <p>比OK手势左右滑动：调节音量</p>
+            <a class="btn" href="{{url_for('webcontrol')}}">视频控制</a>
+            <p>注：点击后可能需要一定时间加载，请耐心等候。按ESC键即可退出。</p>
+        </div>
+        <div class="img-draw"></div>
+        <div class="info-content">
+            <span class="text-primary">屏幕画画</span>
+            <p>用手指在屏幕上画画</p>
+            <span class="text-primary">功能：</span>
+            <p>只有食指竖起：画画</p>
+            <p>食指和中指竖起：移动至各个笔刷位置切换笔刷</p>
+            <p>五指张开：清空屏幕</p>
+            <p>比OK手势：屏幕截图</p>
+            <a class="btn" href="{{url_for('webpainter')}}">屏幕画画</a>
+            <p>注：点击后可能需要一定时间加载，请耐心等候。按ESC键即可退出。</p>
+        </div>
+        <div class="img-read"></div>
+        <div class="info-content">
+            <span class="text-primary">阅读文件</span>
+            <p>通过手势控制切换PPT、阅读word文件</p>
+            <span class="text-primary">功能：</span>
+            <p>只有食指竖起：移动鼠标</p>
+            <p>食指放下：左击</p>
+            <p>食指和中指竖起：右击</p>
+            <p>五指张开：PPT全屏</p>
+            <p>拇指放下，四指张开：退出全屏</p>
+            <p>伸大拇指：切换上一张PPT</p>
+            <p>伸小拇指：切换下一张PPT</p>
+            <p>比OK手势放在上半个屏幕：向上滑动</p>
+            <p>比OK手势放在下半个屏幕：向下滑动</p>
+            <a class="btn" href="{{url_for('webRead')}}">阅读文件</a>
+            <p>注：点击后可能需要一定时间加载，请耐心等候。按ESC键即可退出。</p>
+        </div>
+    </section>
+
+    <footer id="main-footer">
+        <p>手势控制 &copy; 2022,All Rights Reserved</p>
+    </footer>
+</body>
+</html>

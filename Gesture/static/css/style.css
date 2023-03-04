@@ -1,0 +1,147 @@
+/*reset*/
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+/*main set*/
+html,body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height:1.7em;
+}
+a{
+    color:#000000;
+    text-decoration:none;
+}
+h1,h2,h3{
+    padding-bottom:20px;
+}
+p{
+    margin:10px,0;
+}
+
+/*classes*/
+.container{
+    margin:0 auto;/*mid*/
+    max-width:1100px;
+    overflow:hidden;
+    padding:0px 0px;
+}
+
+.text-primary {
+    color: #5e7987;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.bg-primary {
+    background: #496978;
+}
+
+.bg-color {
+    background: #c7d2d4;
+    color: #253d24;
+}
+
+.py{
+    padding:10px,0;
+}
+
+.l-heading{
+    font-size:40px;
+    padding-top:20px;
+}
+
+.message{
+    font-size:18px;
+    padding-top:20px;
+    color:#ffffff;
+    text-align=center;
+}
+
+#navbar {
+    background: #b2bbbe;
+    color: #ffffff;
+    overflow: auto;
+}
+#navbar a{
+    color:#ffffff;
+}
+ #navbar h1{
+     float:left;
+     padding-top:20px;
+ }
+ #navbar ul{
+     float:right;
+     list-style:none;
+ }
+ #navbar ul li{
+     float:left;
+ }
+    #navbar ul li a{
+        display: block; /*in order to set padding( a),set a block*/
+        padding: 20px;
+        text-align: center;
+    }
+    #navbar ul li a.current,
+    #navbar ul li a:hover{
+        background: #cfccc9;
+        color: #4a4035;
+    }
+
+
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    color: #ffffff;
+    background: #132c33;
+    padding: 13px 20px;
+    margin: 10px 0px
+}
+    .btn:hover {
+        background: #617172;
+    }
+ /*introduction*/
+ #home-info{
+     height:600px;
+ }
+ #home-info .img-control{
+     float:left;
+     width:60%;
+     background:url('../Picture/control.png') no-repeat center center/cover;
+     height:100%;
+ }
+ #home-info .img-draw{
+     float:left;
+     width:60%;
+     background:url('../Picture/draw.png') no-repeat center center/cover;
+     height:100%;
+ }
+ #home-info .img-read{
+     float:left;
+     width:60%;
+     background:url('../Picture/read.png') no-repeat center center/cover;
+     height:100%;
+ }
+ #home-info .info-content {
+     color: #253d24;
+     background:#C7D2D4;
+     float:right;
+     width: 40%;
+     text-align: left;
+     height: 100%;
+     padding: 50px 30px;
+     overflow: hidden;
+    }
+ #home-info .info-content p{
+     padding-bottom:10px;
+ }
+
+ /*footer*/
+#main-footer {
+    text-align: center;
+    background: #b2bbbe;
+    color: #ffffff;
+    padding: 20px;
+}
